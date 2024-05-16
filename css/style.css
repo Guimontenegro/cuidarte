@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #fccaca url('/imagenes/enfermeria-fondo.jpg') no-repeat center center fixed; /* Añade la imagen de fondo */
+    background-size: cover; /* Cubre todo el fondo */
+    font-family: 'Arial', sans-serif; /* Cambiado el tipo de letra a Arial para mayor compatibilidad */
+}
+/**body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; Para colocar el pseudo-elemento detrás del contenido 
+    background: url('/imagenes/enfermeria-fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(0px); Ajusta el valor según sea necesario para el efecto de desenfoque deseado
+}
+body.blurred.mision::before {
+    filter: blur(5px);**/
+
+header {
+    background-color: rgba(52, 152, 219, 0.8); /* Color de fondo azul, con transparencia */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ecf0f1;
+}
+
+.container {
+    display: flex;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    border-style: double;
+    border-color: black;
+    border-radius: 5%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em; /* Ajustado el tamaño de fuente para mayor legibilidad */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgba(217, 148, 245, 0.9); /* Fondo salmón pastel con transparencia */
+    max-width: 150%;
+}
+
+.box:hover {
+    transform: scale(1.2);
+}
+
+.box.enfermero {
+    margin-right: 10px;
+}
+
+.box.paciente {
+    margin-left: 10px;
+}

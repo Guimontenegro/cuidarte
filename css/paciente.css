@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db; /* Color de fondo azul */
+    padding: 10px 0;
+    position: fixed; /* Fija la posición del header */
+    width: 100%; /* Ocupa el 100% del ancho de la ventana */
+    top: 0; /* Alinea en la parte superior de la ventana */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Color de texto blanco */
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ecf0f1; /* Cambia de color al pasar el ratón */
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta el alto según tus necesidades */
+}
+
+.box.paciente {
+    max-width: 400px; /* Ancho máximo de la caja */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: #f9e4e8; /* Color de fondo salmón pastel */
+}
+
+.box.paciente form {
+    text-align: center;
+}
+
+.box.paciente h2 {
+    color: #333; /* Color de texto oscuro */
+}
+
+.box.paciente label {
+    display: block;
+    margin-top: 10px;
+    color: #555; /* Color de texto gris */
+}
+
+.box.paciente input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 4px;
+}
+
+.box.paciente button {
+    background-color: #86c7cc; /* Color de fondo verde azulado pastel */
+    color: #fff; /* Color de texto blanco */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.box.paciente button:hover {
+    background-color: #6bafb4; /* Cambia de color al pasar el ratón */
+}
+
+.box.paciente p {
+    margin-top: 15px;
+}
+
+.box.paciente a {
+    text-decoration: none;
+    color: #333; /* Color de texto oscuro */
+}
+
+.box.paciente a:hover {
+    color: #6bafb4; /* Cambia de color al pasar el ratón */
+}
